@@ -1,6 +1,6 @@
 package org.marlonaguirre.bean;
 
-import java.sql.Date;
+import java.util.Date;
 
 public abstract class Publicacion {
 	
@@ -9,6 +9,9 @@ public abstract class Publicacion {
 	private String editorial;
 	private String [] autores;
 	
+	public Publicacion() {
+		
+	}
 	
 	public Publicacion(String title,Date editionDate, String editorial, String[] autores) {
 		this.title = title;
